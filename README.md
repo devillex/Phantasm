@@ -1,4 +1,4 @@
-# Casper
+# Phantasm
 
 A theme based on [Casper](http://github.com/TryGhost/Casper), the default theme for [Ghost](http://github.com/tryghost/ghost/).
 
