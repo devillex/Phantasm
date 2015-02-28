@@ -2,6 +2,16 @@
 
 A theme based on [Casper](http://github.com/TryGhost/Casper), the default theme for [Ghost](http://github.com/tryghost/ghost/).
 
+## Features
+
+### Disqus Comments
+
+To configure comments with [Disqus](https://disqus.com/), edit the **post.hbs** file. Find the placeholder called  *REPLACE-WITH-YOUR-DISQUS-SHORTNAME* and you guessed it, replace it with your personal short name obtained from Disqus.
+
+### Google Analytics
+
+[Google Analytics](http://analytics.google.com/) can be enabled by editing the **default.hbs** file. Find the placeholder called *REPLACE-WITH-YOUR-ANALYTICS-TRACKING-ID* and replace it with your unique analytics tracking ID.
+
 ## Copyright & License
 
 Copyright (C) 2015 De Ville Weppenaar - Released under the MIT License.
