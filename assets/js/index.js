@@ -1,5 +1,5 @@
 /**
- * Main JS file for Casper behaviours
+ * Main JS file for Phantasm behaviours
  */
 
 /* globals jQuery, document */
@@ -50,12 +50,12 @@
         }
 
         var $img = $("img").on('load', updateImageWidth);
-        function casperFullImg() {
+        function phantasmFullImg() {
             $img.each(updateImageWidth);
         }
 
-        casperFullImg();
-        $(window).smartresize(casperFullImg);
+        phantasmFullImg();
+        $(window).smartresize(phantasmFullImg);
 
         $(".scroll-down").arctic_scroll();
 
