@@ -17,7 +17,7 @@
         var obj = this, args = arguments;
         function delayed () {
           if (!execAsap) {
-              func.apply(obj, args);
+            func.apply(obj, args);
           }
           timeout = null;
         }
