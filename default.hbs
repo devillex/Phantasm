@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
+
+  <head>
     {{! Document Settings }}
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,8 +21,9 @@
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
-</head>
-<body class="{{body_class}}">
+  </head>
+
+  <body class="{{body_class}}">
 
     {{! Everything else gets inserted here }}
     {{{body}}}
@@ -38,5 +40,6 @@
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
-</body>
+  </body>
+
 </html>
