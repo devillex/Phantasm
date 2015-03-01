@@ -12,6 +12,12 @@ To configure comments with [Disqus](https://disqus.com/), edit the **post.hbs** 
 
 [Google Analytics](http://analytics.google.com/) can be enabled by editing the **default.hbs** file. Find the placeholder called *REPLACE-WITH-YOUR-ANALYTICS-TRACKING-ID* and replace it with your unique analytics tracking ID.
 
+### Custom Favicon
+
+Created custom favicon for Phantasm based on the [vapor-logo.png](http://www.thebytes.net/content/images/2014/12/vapor-logo.png) from [the bytes](http://www.thebytes.net/).
+
+Thanks to the *[Real Favicon Generator](http://realfavicongenerator.net/)* for generating multiple image dimensions, formats and supporting scripts.
+
 ## Copyright & License
 
 Copyright (C) 2015 De Ville Weppenaar - Released under the MIT License.
