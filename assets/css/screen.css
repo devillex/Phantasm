@@ -17,6 +17,7 @@
     10. Media Queries (Tablet)
     11. Media Queries (Mobile)
     12. Animations
+    13. Error Related
 
 */
 
@@ -669,7 +670,14 @@ margin on the iframe, cause it breaks stuff. */
     font-weight: 400;
     font-family: "Merriweather", serif;
     letter-spacing: 0.01rem;
-    color: rgba(255,255,255,0.8);
+    color: #fff;
+}
+
+.page-header {
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(64,64,64,1.0);
+    background-color: rgba(64,64,64,0.3);
 }
 
 .no-cover.main-header {
@@ -1769,8 +1777,108 @@ body:not(.post-template) .post-title {
     }
 }
 
+/* ==========================================================================
+   13. Error Related Styles
+   ========================================================================== */
+
+.phantasm-error-content {
+    max-width:530px;
+    margin:0 auto;padding:0;
+    display:table;
+    height:100%
+}
+
+.phantasm-error-details {
+    display:table-cell;
+    vertical-align:middle
+}
+
+.phantasm-error-image {
+    display:inline-block;
+    vertical-align:middle;
+    width:150px;
+    height:150px
+}
+
+.phantasm-error-image img {
+    width:100%;
+    height:100%
+}
+
+.phantasm-error-message {
+    position:relative;
+    top:-5px;
+    display:inline-block;
+    vertical-align:middle;
+    margin-left:10px;
+    color:rgba(64,64,64,1.0)
+}
+
+.phantasm-error-code {
+    margin:0;
+    font-size:7.8em;
+    line-height:0.9em;
+}
+
+.phantasm-error-description {
+    margin:0;
+    padding:0;
+    font-weight:300;
+    font-size:1.9em;
+    border:none
+}
+
+.phantasm-error-stack {
+    margin:1em auto;
+    padding:2em;
+    max-width:800px;
+    background-color:rgba(255,255,255,0.3)
+}
+
+.phantasm-error-stack-list {
+    list-style-type:none;
+    padding:0;
+    margin:0
+}
+
+.phantasm-error-stack-list li {
+    display:block
+}
+
+.phantasm-error-stack-list li:before {
+    color:#BBB;
+    content:"\21AA";
+    display:inline-block;
+    font-size:1.2em;
+    margin-right:0.5em
+}
+
+.phantasm-error-stack-function {
+    font-weight:bold
+}
+
+@media (max-width: 630px) {
+
+    .phantasm-error-content {
+        max-width:264px;
+        text-align:center;
+    }
+
+    .phantasm-error-image {
+        width:150px;
+        height:150px;
+    }
+
+    .phantasm-error-code {
+        font-size:5.8em;
+    }
+
+    .phantasm-error-description {
+        font-size:1.4em;
+    }
+
+}
 
 /* ==========================================================================
-   End of file. Animations should be the last thing here. Do not add stuff
-   below this point, or it will probably fuck everything up.
+   End of file.
    ========================================================================== */

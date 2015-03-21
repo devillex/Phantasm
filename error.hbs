@@ -1,0 +1,29 @@
+{{!< default}}
+<section class="phantasm-error-content error-404 js-error-container">
+  <section class="phantasm-error-details">
+    <figure class="phantasm-error-image">
+      <img class="phantasm-error" src="{{asset "/../assets/images/error/404-phantasm@x2.png" ghost="true"}}" srcset="{{asset "/../assets/images/error/404-phantasm.png" ghost="true"}} 1x, {{asset "/../assets/images/error/404-phantasm@x2.png" ghost="true"}} 2x"/>
+    </figure>
+    <section class="phantasm-error-message">
+      <h1 class="phantasm-error-code">{{code}}</h1>
+      <h2 class="phantasm-error-description">{{message}}</h2>
+      <a class="phantasm-error-link" href="{{@blog.url}}">Go to the front page →</a>
+    </section>
+  </section>
+</section>
+
+{{#if stack}}
+  <section class="phantasm-error-stack">
+    <h3>Stack Trace</h3>
+    <p><strong>{{message}}</strong></p>
+    <ul class="phantasm-error-stack-list">
+      {{#foreach stack}}
+        <li>
+          at
+          {{#if function}}<em class="phantasm-error-stack-function">{{function}}</em>{{/if}}
+          <span class="phantasm-error-stack-file">({{at}})</span>
+        </li>
+      {{/foreach}}
+    </ul>
+  </section>
+{{/if}}
